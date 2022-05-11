@@ -12,8 +12,6 @@ async def on_ready():
 	await client.get_channel(959112198578393148).send('🟢 WaterMod is online')
 	print(f'Logged in as {client.user.name}')
 	await client.change_presence(status=nextcord.Status.dnd, activity=nextcord.Game(name=f"Playing /help with {len(client.users)} users in {len(client.guilds)} servers"))
-
-# making file changes for a test
   
 @client.slash_command(
 name="purge",
